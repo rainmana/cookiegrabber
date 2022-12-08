@@ -39,7 +39,7 @@ def getCookiesFromDomain(domain: str, cookieName: str):
 
 
 # Test the function to see if it's working
-## print(getCookiesFromDomain('purdueglobal',''))
+## print(getCookiesFromDomain('google',''))
 
 if __name__ == "__main__":
     app()
