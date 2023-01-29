@@ -13,7 +13,7 @@ Simple Python3 script/CLI tool to grab and dump cookies from all browsers. Build
 
 ### TODO:
 
-- [ ] Add requirements.txt/installer
+- [x] Add requirements.txt/installer
 - [ ] Add a screenshot grabbing function
 - [ ] Allow use as a module for additional functionality
 - [ ] Add command line arguments to specify browser, domain, site/page, screenshots, etc.
