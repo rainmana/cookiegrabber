@@ -10,6 +10,14 @@ Simple Python3 script/CLI tool to grab and dump cookies from all browsers. Build
 5. `python3 cookiebrabber.py function --help` for specific help on commandline arguments and options
 6. `python3 cookiebrabber.py get-all-cookies` to dump all cookies from all browsers in pretty JSON (example functionality)
 
+### Dependencies
+- `beautifulsoup4==4.11.1`
+- `bleach==5.0.1`
+- `browser_cookie3==0.16.1`
+- `requests==2.28.1`
+- `rich==13.3.1`
+- `typer==0.7.0`
+
 ### Latest Update as of 1/29/2023:
 
 - Get human-readable text from a site of your choosing to test whether extract cookies can load site content where they're typically required
