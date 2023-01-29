@@ -2,6 +2,14 @@
 
 Simple Python3 script/CLI tool to grab and dump cookies from all browsers. Building further capabilities to make requests, sort, etc. as time goes on. This tool is focused around legal, ethical, and education penetration and security testing. Please read the [disclaimer](#disclaimer) before proceeding with installation and/or usage.
 
+## Install and usage
+1. `git clone https://github.com/rainmana/cookiegrabber`
+2. `cd cookiegrabber`
+3. `pip install -r requirements.txt`
+4. `python3 cookiegrabber.py --help` for commandline based help
+5. `python3 cookiebrabber.py function --help` for specific help on commandline arguments and options
+6. `python3 cookiebrabber.py get-all-cookies` to dump all cookies from all browsers in pretty JSON (example functionality)
+
 ### Latest Update as of 1/29/2023:
 
 - Get human-readable text from a site of your choosing to test whether extract cookies can load site content where they're typically required
@@ -13,7 +21,8 @@ Simple Python3 script/CLI tool to grab and dump cookies from all browsers. Build
 
 ### TODO:
 
-- [x] Add requirements.txt/installer
+- [x] Add requirements.txt
+- [ ] Add installation instructions
 - [ ] Add a screenshot grabbing function
 - [ ] Allow use as a module for additional functionality
 - [ ] Add command line arguments to specify browser, domain, site/page, screenshots, etc.
