@@ -72,12 +72,19 @@ def get_site_text(url: str = typer.Argument(..., help="The URL of the site you w
     request = requests.get(page, cookies=cookies)
 
     # Use BeautifulSoup to parse the HTML
-    soup = BeautifulSoup(request.content, 'html.parser')
+    #soup = BeautifulSoup(request.content, 'html.parser')
 
+    # get the text of the page
+    text = request.text
+
+    # Clean up the text with bleach
+    clean_text = bleach.clean(text, tags=[], attributes={}, strip=True)
+
+    
     # Get the text of the page
-    text = soup.get_text()
+    #text = soup.get_text()
     # Print the HTML
-    print(text)
+    print(clean_text)
 
 # Make typer run the app
 if __name__ == "__main__":
